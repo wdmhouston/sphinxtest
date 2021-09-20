@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to ProjectName’s documentation! &mdash; ProjectName 1.0 documentation</title>
+  <title>Welcome to Fruit Recognition Web Api’s documentation! &mdash; ProjectName 1.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -37,7 +37,10 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Welcome to ProjectName’s documentation!</a></li>
+<li><a class="reference internal" href="#">Welcome to Fruit Recognition Web Api’s documentation!</a><ul>
+<li><a class="reference internal" href="#tutorial-1-first-steps">Tutorial 1: First Steps</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 </div>
@@ -55,7 +58,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="#" class="icon icon-home"></a> &raquo;</li>
-      <li>Welcome to ProjectName’s documentation!</li>
+      <li>Welcome to Fruit Recognition Web Api’s documentation!</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -65,10 +68,37 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="welcome-to-projectname-s-documentation">
-<h1>Welcome to ProjectName’s documentation!<a class="headerlink" href="#welcome-to-projectname-s-documentation" title="Permalink to this headline">¶</a></h1>
+  <section id="welcome-to-fruit-recognition-web-api-s-documentation">
+<h1>Welcome to Fruit Recognition Web Api’s documentation!<a class="headerlink" href="#welcome-to-fruit-recognition-web-api-s-documentation" title="Permalink to this headline">¶</a></h1>
+<section id="tutorial-1-first-steps">
+<h2>Tutorial 1: First Steps<a class="headerlink" href="#tutorial-1-first-steps" title="Permalink to this headline">¶</a></h2>
+<p><strong>Context</strong></p>
+<p>In this tutorial, we use a single-phase flow solver
+to solve for pressure propagation on a 10x10x10 cube mesh
+with anisotropic permeability values.
+The pressure source is the lowest-left corner element, and the pressure sink sits at the opposite top corner.</p>
+<p>At the end of this tutorial you will know:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>the basic structure of XML input files used by GEOSX,</p></li>
+<li><p>how to run GEOSX on a simple case requiring no external input files,</p></li>
+<li><p>the basic syntax of a solver block for single-phase problems,</p></li>
+<li><p>how to control output and visualize results.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Input file</strong></p>
+<p>GEOSX runs by reading user input information from one or more XML files.
+For this tutorial, we only need a single GEOSX input file located at:</p>
+<p><strong>Running GEOSX</strong></p>
+<p>If our XML input file is called <code class="docutils literal notranslate"><span class="pre">my_input.xml</span></code>, GEOSX runs this file by executing:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">/path/to/geosx -i /path/to/my_input.xml</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">-i</span></code> flag indicates the path to the XML input file.
+To get help on what other command line input flags GEOSX supports, run <code class="docutils literal notranslate"><span class="pre">geosx</span> <span class="pre">--help</span></code>.</p>
 <div class="toctree-wrapper compound">
 </div>
+</section>
 </section>
 <section id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
